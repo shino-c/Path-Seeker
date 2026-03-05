@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#000000"
+    tools:context=".filters">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/IBback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TVFilters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="163dp"
+            android:fontFamily="@font/judson_bold"
+            android:text="Filters"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/IBback"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TVLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="26dp"
+            android:fontFamily="@font/judson_bold"
+            android:text="Location"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IBback" />
+
+        <TextView
+            android:id="@+id/TVuseLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/baseline_location_on_24"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/judson_bold"
+            android:text="Use current location"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TVLocation"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/TVWithinKM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/judson_bold"
+            android:text="Within 10 km:"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TVuseLoc"/>
+
+        <SeekBar
+            android:id="@+id/radiusSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            app:layout_constraintTop_toBottomOf="@id/TVWithinKM"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:max="30"
+            android:min="1"
+            android:progress="10"
+            android:progressTint="@color/brown"
+            android:thumbTint="@color/brown"/>
+
+
+        <!-- Job Type Dropdown -->
+        <LinearLayout
+            android:id="@+id/jobTypeDropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/radiusSeekBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical"
+            android:background="@drawable/brown_border"
+            android:padding="3dp"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/dropdownJobTypeHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="Job Type"
+                android:hint="Job Type"
+                android:fontFamily="@font/judson"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:drawableEnd="@drawable/baseline_keyboard_arrow_down_24"
+                android:gravity="center_vertical" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dropdownJobTypeRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Remote Dropdown -->
+        <LinearLayout
+            android:id="@+id/remoteDropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/jobTypeDropdown"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical"
+            android:background="@drawable/brown_border"
+            android:padding="3dp"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/dropdownRemoteHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="Remote"
+                android:hint="Remote"
+                android:fontFamily="@font/judson"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:drawableEnd="@drawable/baseline_keyboard_arrow_down_24"
+                android:gravity="center_vertical" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dropdownRemoteRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Experience Dropdown -->
+        <LinearLayout
+            android:id="@+id/experienceDropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/remoteDropdown"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical"
+            android:background="@drawable/brown_border"
+            android:padding="3dp"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/dropdownExperienceHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="Experience Level"
+                android:hint="Experience Level"
+                android:fontFamily="@font/judson"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:drawableEnd="@drawable/baseline_keyboard_arrow_down_24"
+                android:gravity="center_vertical" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dropdownExperienceRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+        <!-- Job Category Dropdown -->
+        <LinearLayout
+            android:id="@+id/jobCategoryDropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/experienceDropdown"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical"
+            android:background="@drawable/brown_border"
+            android:padding="3dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/dropdownJobCategoryHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="Job Category"
+                android:hint="Job Category"
+                android:fontFamily="@font/judson"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:drawableEnd="@drawable/baseline_keyboard_arrow_down_24"
+                android:gravity="center_vertical" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/dropdownJobCategoryRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnApply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:backgroundTint="@color/brown"
+            android:elevation="100dp"
+            android:fontFamily="@font/judson_bold"
+            android:text="Apply"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/jobCategoryDropdown"
+            app:layout_constraintVertical_bias="0.85" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

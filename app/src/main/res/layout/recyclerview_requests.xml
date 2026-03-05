@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="230dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:backgroundTint="#231F20"
+        app:cardCornerRadius="10dp"
+        android:layout_marginHorizontal="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="100dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/IVprofile"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.049"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.133"
+                app:shapeAppearanceOverlay="@style/CircularShape"
+                app:srcCompat="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/TVapplicantName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/judson_bold"
+                android:text="Judy Hopps"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/IVprofile"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/TVAppliedPosition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/judson_bold"
+                android:text="Lead UX/UI Designer"
+                android:textColor="#CCFFFFFF"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/IVprofile"
+                app:layout_constraintTop_toBottomOf="@id/TVapplicantName" />
+
+            <TextView
+                android:id="@+id/TVAppliedJobType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/judson_bold"
+                android:text="Applied: "
+                android:textColor="#CCFFFFFF"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/IVprofile"
+                app:layout_constraintTop_toBottomOf="@id/TVAppliedPosition" />
+
+            <TextView
+                android:id="@+id/TVviewProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/judson"
+                android:text="View Profile"
+                android:textColor="#88FFFFFF"
+                android:textSize="15sp"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintStart_toEndOf="@+id/IVprofile"
+                app:layout_constraintTop_toBottomOf="@+id/TVAppliedJobType" />
+
+            <TextView
+                android:id="@+id/TVviewResume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/judson"
+                android:text="View Resume"
+                android:textColor="#88FFFFFF"
+                android:textSize="15sp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toEndOf="@+id/TVviewProfile"
+                app:layout_constraintTop_toBottomOf="@+id/TVAppliedJobType" />
+
+            <Button
+                android:id="@+id/btnReject"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="28dp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/baseline_cancel_24"
+                android:fontFamily="@font/judson"
+                android:paddingStart="10dp"
+                android:text="Reject"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.33"
+                app:layout_constraintStart_toStartOf="@id/IVprofile"
+                app:layout_constraintTop_toTopOf="@id/TVviewProfile" />
+
+            <Button
+                android:id="@+id/btnAccept"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="16dp"
+                android:paddingStart="10dp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/baseline_check_24"
+                android:fontFamily="@font/judson"
+                android:text="Accept"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnReject"
+                app:layout_constraintTop_toTopOf="@id/TVviewProfile" />
+
+            <Button
+                android:id="@+id/btnScheduleIV"
+                android:layout_width="272dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/judson"
+                android:text="Schedule an Interview"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnAccept" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

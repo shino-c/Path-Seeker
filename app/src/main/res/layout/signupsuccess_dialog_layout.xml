@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_roundedbg"
+    android:padding="24dp">
+
+
+    <View
+        android:layout_width="223dp"
+        android:layout_height="12dp" />
+
+    <ImageView
+        android:id="@+id/dialogIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:contentDescription="Success Tick"
+        android:src="@drawable/successtick" />
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/judson"
+        android:gravity="center"
+        android:text="Sign Up Successful"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/dialogMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/judson"
+        android:gravity="center"
+        android:text="You have successfully signed up!"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="311dp"
+        android:layout_height="12dp" />
+
+    <Button
+        android:id="@+id/proceedToLoginBtn"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#111E0A"
+        android:fontFamily="@font/judson"
+        android:text="Proceed to Login"
+        android:textSize="16sp"
+        app:cornerRadius="8sp" />
+
+</LinearLayout>

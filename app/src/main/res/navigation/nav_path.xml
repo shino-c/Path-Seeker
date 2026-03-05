@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.MAD.AppHome_Fragment"
+        tools:layout="@layout/fragment_app_home">
+    <action
+        android:id="@+id/action_homeFragment_to_forumFragment"
+        app:destination="@id/forumFragment" />
+    <action
+        android:id="@+id/action_homeFragment_to_mentorshipFragment"
+        app:destination="@id/mentorshipFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.MAD.Search_Fragment"
+        tools:layout="@layout/fragment_search_main_page" >
+        <action
+            android:id="@+id/action_searchFragment_to_courseFragment"
+            app:destination="@id/courseFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_partnershipProgramFragment"
+            app:destination="@id/partnershipProgramFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_eventsFragment"
+            app:destination="@id/eventsFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_jobMainFragment"
+            app:destination="@id/jobMainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/careerFragment"
+        android:name="com.example.MAD.CareerMain_Fragment"
+        tools:layout="@layout/fragment_career_resources_main">
+        <!-- Mark these fragments as part of the career section -->
+        <action
+            android:id="@+id/action_careerMain_to_mentorshipFragment"
+            app:destination="@id/mentorshipFragment"
+            app:popUpTo="@id/careerFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_careerMain_to_articleFragment"
+            app:destination="@id/articleFragment"
+            app:popUpTo="@id/careerFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_careerMain_to_forumFragment"
+            app:destination="@id/forumFragment"
+            app:popUpTo="@id/careerFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.example.MAD.ArticleFragment"
+        tools:layout="@layout/fragment_article" />
+
+    <fragment
+        android:id="@+id/articleDetailFragment"
+        android:name="com.example.MAD.ArticleDetailFragment"
+        android:label="fragment_article_detail"
+        tools:layout="@layout/fragment_article_detail" />
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.example.MAD.ScheduleFragment"
+        android:label="ScheduleFragment" />
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.MAD.CalendarFragment"
+        android:label="CalendarFragment" />
+    <fragment
+        android:id="@+id/healthFragment"
+        android:name="com.example.MAD.HealthFragment"
+        android:label="HealthFragment">
+        <action
+            android:id="@+id/action_healthFragment_to_articleFragment"
+            app:destination="@id/articleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mentorshipFragment"
+        android:name="com.example.MAD.MentorshipFragment"
+        android:label="mentorshipFragment"/>
+    <!-- Add this line to associate with career tab -->
+
+    <fragment
+        android:id="@+id/forumFragment"
+        android:name="com.example.MAD.ForumFragment"
+        android:label="forumFragment" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.MAD.ProfileIdentifyFragment"
+        android:label="profileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_selfSeekerFragment"
+            app:destination="@id/selfSeekerFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_selfCompanyFragment"
+            app:destination="@id/selfCompanyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/selfSeekerFragment"
+        android:name="com.example.MAD.ProfileSelfSeekerFragment"
+        android:label="selfSeekerFragment" />
+
+    <fragment
+        android:id="@+id/selfCompanyFragment"
+        android:name="com.example.MAD.ProfileSelfCompanyFragment"
+        android:label="selfCompanyFragment" />
+
+    <fragment
+        android:id="@+id/companyEditFragment"
+        android:name="com.example.MAD.ProfileCompanyEditFragment"
+        android:label="companyEditFragment" />
+
+    <fragment
+        android:id="@+id/seekerEditFragment"
+        android:name="com.example.MAD.ProfileSeekerEditFragment"
+        android:label="seekerEditFragment" />
+
+    <fragment
+        android:id="@+id/seekerSettingFragment"
+        android:name="com.example.MAD.ProfileSeekerSettingFragment"
+        android:label="seekerSettingFragment" />
+
+    <fragment
+        android:id="@+id/companySettingFragment"
+        android:name="com.example.MAD.ProfileCompanySettingFragment"
+        android:label="companySettingFragment" />
+
+    <fragment
+        android:id="@+id/companyViewRateFragment"
+        android:name="com.example.MAD.ProfileCompanyViewRateFragment"
+        android:label="companyViewRateFragment" />
+
+    <fragment
+        android:id="@+id/profileSeekerViewRate"
+        android:name="com.example.MAD.ProfileSeekerViewRateFragment"
+        android:label="profileSeekerViewRate" />
+
+    <fragment
+        android:id="@+id/courseFragment"
+        android:name="com.example.MAD.CourseMainFragment"
+        android:label="courseFragment" />
+
+    <fragment
+        android:id="@+id/courseDetailsFragment"
+        android:name="com.example.MAD.CourseDetailsFragment"
+        android:label="courseDetailsFragment" />
+
+    <fragment
+        android:id="@+id/partnershipProgramFragment"
+        android:name="com.example.MAD.PartnershipProgramFragment"
+        android:label="partnershipProgramFragment" />
+
+    <fragment
+        android:id="@+id/eventsFragment"
+        android:name="com.example.MAD.EventsFragment"
+        android:label="eventsFragment" />
+
+    <fragment
+        android:id="@+id/jobSearchFragment"
+        android:name="com.example.MAD.jobSearch"
+        android:label="jobSearchFragment" />
+
+    <fragment
+        android:id="@+id/jobFilterFragment"
+        android:name="com.example.MAD.filters"
+        android:label="jobFilterFragment" />
+
+    <fragment
+        android:id="@+id/savedFragment"
+        android:name="com.example.MAD.Saved"
+        android:label="savedFragment" />
+
+    <fragment
+        android:id="@+id/notificationStatus"
+        android:name="com.example.MAD.NotificationStatus"
+        android:label="notificationStatus" />
+
+    <fragment
+        android:id="@+id/notificationRequest"
+        android:name="com.example.MAD.NotificationRequest"
+        android:label="notificationRequest" />
+
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.MAD.MapsFragment"
+        android:label="mapsFragment" />
+    <fragment
+        android:id="@+id/jobDetailsFragment"
+        android:name="com.example.MAD.jobDetails"
+        android:label="jobDetailsFragment" />
+    <fragment
+        android:id="@+id/jobMainFragment"
+        android:name="com.example.MAD.JobMain"
+        android:label="jobMainFragment" >
+    <action
+        android:id="@+id/action_jobMainFragment_to_jobSearchFragment"
+        app:destination="@id/jobSearchFragment" />
+        <action
+            android:id="@+id/action_jobMainFragment_to_jobPostedFragment"
+            app:destination="@id/jobPostedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jobPostedFragment"
+        android:name="com.example.MAD.jobPosted"
+        android:label="jobPostedFragment" />
+    <fragment
+        android:id="@+id/profileCompanyViewRate"
+        android:name="com.example.MAD.ProfileCompanyViewRateFragment"
+        android:label="profileCompanyViewRate" />
+    <fragment
+        android:id="@+id/notiRequestFragment"
+        android:name="com.example.MAD.NotificationRequest"
+        android:label="notiRequestFragment" />
+    <fragment
+        android:id="@+id/createNewJobFragment"
+        android:name="com.example.MAD.CreateNewJob"
+        android:label="createNewJobFragment" />
+</navigation>

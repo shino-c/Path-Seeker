@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ProfileSeekerEditFragment">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="412dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/app_bar" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="215dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:drawableEnd="@drawable/icon"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/judson_bold"
+        android:text="EDIT PROFILE"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="55dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/round" />
+
+    <ImageButton
+        android:id="@+id/btnBackProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@android:color/transparent"
+        android:paddingLeft="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profilePhoto"
+                android:layout_width="122dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="147dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="147dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/roundedImageView"
+                app:srcCompat="@drawable/img_1" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginTop="120dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.646"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/round" />
+
+            <ImageButton
+                android:id="@+id/camera"
+                android:layout_width="55dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="120dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.62"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/camera" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="141dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="142dp"
+                android:fontFamily="@font/judson_bold"
+                android:text="Profile Picture"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profilePhoto" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView30">
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="177dp"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="Name"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="31dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:ems="10"
+                    android:fontFamily="@font/judson_bold"
+                    android:inputType="text"
+                    android:text="Judy Hopps"
+                    android:textAlignment="textEnd"
+                    android:textColor="#DADADA"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/divider16"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/textView32"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divider16"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="184dp"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="Working Status"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/statusText"
+                    android:layout_width="354dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView34"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="30dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:ems="10"
+                    android:fontFamily="@font/judson_bold"
+                    android:inputType="text"
+                    android:text="Freelancer, Universiti Malaya"
+                    android:textColor="#DADADA"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/divider17"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/statusText"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divider17"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="184dp"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="ABOUT ME\n(50 words)"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnUploadPDF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_below="@+id/divider17"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="221dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:backgroundTint="#F0801C"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="Upload CV pdf."
+                    android:textSize="16sp"
+                    app:cornerRadius="20dp"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <EditText
+                    android:id="@+id/editBio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView46"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="30dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:ems="10"
+                    android:fontFamily="@font/judson_bold"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:text="Hi, I'm Judy Hopps, an energetic rabbit with a passion for justice and problem-solving. As Zootopia's first rabbit police officer, I bring a unique perspective, strong work ethic, and commitment to making a positive impact. I thrive in fast-paced environments, tackling challenges with creativity and perseverance."
+                    android:textColor="#DADADA"
+                    android:textSize="15dp" />
+
+                <View
+                    android:id="@+id/divider28"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/editBio"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="218dp"
+                    android:layout_height="36dp"
+                    android:layout_below="@+id/divider28"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="142dp"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="SKILLS &amp; INTERESTS"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/skill1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView47"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:fontFamily="@font/judson_bold"
+                    android:hint="Skill 1"
+                    android:inputType="text"
+                    android:textColor="#DADADADA"
+                    android:textColorHint="#DADADA"
+                    android:textSize="15dp" />
+
+                <RatingBar
+                    android:id="@+id/ratingBarS1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView47"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="-15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="-25dp"
+                    android:layout_toEndOf="@+id/skill1"
+                    android:numStars="5"
+                    android:progressBackgroundTint="#DADADA"
+                    android:progressTint="#FA801C"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:stepSize="0.5" />
+
+                <EditText
+                    android:id="@+id/skill2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/skill1"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:fontFamily="@font/judson_bold"
+                    android:hint="Skill 2"
+                    android:inputType="text"
+                    android:textColor="#DADADADA"
+                    android:textColorHint="#DADADA"
+                    android:textSize="15dp" />
+
+                <RatingBar
+                    android:id="@+id/ratingBarS2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ratingBarS1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="-15dp"
+                    android:layout_marginTop="-0dp"
+                    android:layout_marginEnd="-25dp"
+                    android:numStars="5"
+                    android:progressBackgroundTint="#DADADA"
+                    android:progressTint="#FA801C"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5" />
+
+                <EditText
+                    android:id="@+id/skill3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/skill2"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:fontFamily="@font/judson_bold"
+                    android:hint="Skill 3"
+                    android:inputType="text"
+                    android:textColor="#DADADADA"
+                    android:textColorHint="#DADADA"
+                    android:textSize="15dp" />
+
+                <RatingBar
+                    android:id="@+id/ratingBarS3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ratingBarS2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="-15dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="-25dp"
+                    android:numStars="5"
+                    android:progressBackgroundTint="#DADADA"
+                    android:progressTint="#FA801C"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5" />
+
+                <Button
+                    android:id="@+id/button17"
+                    android:layout_width="100dp"
+                    android:layout_height="42dp"
+                    android:layout_below="@+id/skill3"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_toStartOf="@+id/button18"
+                    android:backgroundTint="#FA801C"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="Interest"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:cornerRadius="10dp" />
+
+                <Button
+                    android:id="@+id/button18"
+                    android:layout_width="100dp"
+                    android:layout_height="42dp"
+                    android:layout_below="@+id/skill3"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_toStartOf="@+id/button19"
+                    android:backgroundTint="#FA801C"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="Interest"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:cornerRadius="10dp" />
+
+                <Button
+                    android:id="@+id/button19"
+                    android:layout_width="100dp"
+                    android:layout_height="42dp"
+                    android:layout_below="@+id/skill3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="30dp"
+                    android:backgroundTint="#FA801C"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="Interest"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:cornerRadius="10dp" />
+
+                <View
+                    android:id="@+id/divider29"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/button18"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="218dp"
+                    android:layout_height="36dp"
+                    android:layout_below="@+id/divider29"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="147dp"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="MY EXPERIENCE"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RVExp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView41"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="0dp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="165dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="164dp"
+                android:backgroundTint="#B17943"
+                android:fontFamily="@font/judson_bold"
+                android:text="+Add"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="160dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#F0801C"
+                android:fontFamily="@font/judson_bold"
+                android:text="Save"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.56"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnAdd"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

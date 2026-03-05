@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.MAD.JobSeekerSignUpFragment" />
+
+    <LinearLayout
+        android:layout_width="356dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-260dp"
+        android:background="@drawable/segment_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/jobSeekerButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/segment_selected"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Job Seeker"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/recruiterButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Recruiter"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</FrameLayout>

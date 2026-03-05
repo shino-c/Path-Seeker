@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_roundedbg"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/verificationTitle"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/judson"
+        android:gravity="center"
+        android:text="Change Password"
+        android:textColor="@android:color/black"
+        android:textSize="25sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/judson"
+        android:text=" Password"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/newPasswordInput"
+        android:layout_width="343dp"
+        android:layout_height="48dp"
+        android:drawableEnd="@drawable/eyeclose"
+        android:fontFamily="@font/judson"
+        android:hint="New password"
+        android:inputType="textPassword"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="11dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/judson"
+        android:text=" Confirm Password"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/confirmNewPasswordInput"
+        android:layout_width="343dp"
+        android:layout_height="48dp"
+        android:drawableEnd="@drawable/eyeclose"
+        android:fontFamily="@font/judson"
+        android:hint="Your confirm password"
+        android:inputType="textPassword"
+        android:textSize="14sp" />
+
+    <!-- Horizontal Layout for Submit and Cancel Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/cancelChangePWBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#AAAAAA"
+            android:fontFamily="@font/judson"
+            android:text="Cancel"
+            android:textSize="16sp"
+            app:cornerRadius="8sp" />
+
+        <View
+            android:layout_width="16dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/submitNewPasswordBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#111E0A"
+            android:fontFamily="@font/judson"
+            android:text="Submit"
+            android:textSize="16sp"
+            app:cornerRadius="8sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

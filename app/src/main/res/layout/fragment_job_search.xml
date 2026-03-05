@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".jobSearch">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/IVProfilePic"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/CircularShape"
+                    app:srcCompat="@drawable/img_1" />
+
+                <TextView
+                    android:id="@+id/TVWelcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="Welcome, User"
+                    android:textColor="#FFFFFF"
+                    android:textSize="26sp"
+                    app:layout_constraintStart_toEndOf="@+id/IVProfilePic"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/IBbookmarks"
+                    android:layout_width="61dp"
+                    android:layout_height="51dp"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginTop="24dp"
+                    android:backgroundTint="#00FFFFFF"
+                    app:layout_constraintStart_toEndOf="@+id/IVProfilePic"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_bookmarks_24" />
+
+                <ImageButton
+                    android:id="@+id/IBnoti"
+                    android:layout_width="61dp"
+                    android:layout_height="51dp"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="24dp"
+                    android:backgroundTint="#00FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/IBbookmarks"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/baseline_notifications_24" />
+
+                <EditText
+                    android:id="@+id/ETsearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="55dp"
+                    android:background="@drawable/searchbar"
+                    android:drawableStart="@drawable/baseline_search_24"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:fontFamily="@font/judson"
+                    android:hint="Search keywords"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textColor="#3C3C43"
+                    android:textColorHint="#CC3C3C43"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/IVProfilePic" />
+
+
+                <ImageButton
+                    android:id="@+id/IBfilter"
+                    android:layout_width="45dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#00FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/ETsearch"
+                    app:layout_constraintTop_toBottomOf="@+id/IBnoti"
+                    app:srcCompat="@drawable/filter" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/CGfilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/ETsearch"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_margin="16dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/TVFindJob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="Find Your Dream Job"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/CGfilter" />
+
+                <TextView
+                    android:id="@+id/TVClearFilter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="104dp"
+                    android:layout_marginTop="24dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="Clear filter"
+                    android:textColor="#88FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/TVFindJob"
+                    app:layout_constraintTop_toBottomOf="@+id/CGfilter" />
+
+                <TextView
+                    android:id="@+id/TVJobFound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:fontFamily="@font/judson"
+                    android:text="0 job(s) found"
+                    android:visibility="gone"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/TVFindJob" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RVjob"
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/TVJobFound"
+                    app:layout_constraintVertical_bias="0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="CreateNewJob">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/IBback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#00FFFFFF"
+                android:src="@drawable/back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/TVCreateJobTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="163dp"
+                android:fontFamily="@font/judson_bold"
+                android:text="Create New Job"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/IBback"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/TVinputJobTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/judson_bold"
+                android:labelFor="@+id/ETJobTitle"
+                android:text="Job Title"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TVCreateJobTitle" />
+
+            <EditText
+                android:id="@+id/ETJobTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/brown_border"
+                android:hint="e.g. Graphic Designer"
+                android:padding="16dp"
+                android:textColorHint="#88FFFFFF"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TVinputJobTitle" />
+
+            <TextView
+                android:id="@+id/TVinputLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/judson_bold"
+                android:labelFor="@+id/ETJobTitle"
+                android:text="Location"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ETJobTitle" />
+
+            <EditText
+                android:id="@+id/ETLocation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/brown_border"
+                android:hint="Enter work location"
+                android:padding="16dp"
+                android:textColorHint="#88FFFFFF"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TVinputLocation" />
+
+            <TextView
+                android:id="@+id/TVinputSalary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/judson_bold"
+                android:labelFor="@+id/ETJobTitle"
+                android:text="Salary"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ETLocation" />
+
+            <EditText
+                android:id="@+id/ETSalary"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/brown_border"
+                android:hint="Enter salary per month"
+                android:padding="16dp"
+                android:textColorHint="#88FFFFFF"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TVinputSalary" />
+
+            <TextView
+                android:id="@+id/TVinputJobDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/judson_bold"
+                android:labelFor="@+id/ETJobTitle"
+                android:text="Job Description"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ETSalary" />
+
+            <EditText
+                android:id="@+id/ETJobDesc"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/brown_border"
+                android:hint="Enter job description"
+                android:padding="16dp"
+                android:textColorHint="#88FFFFFF"
+                android:textColor="@color/white"
+                android:inputType="textMultiLine"
+                android:gravity="top|start"
+                android:lines="4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TVinputJobDesc" />
+
+            <TextView
+                android:id="@+id/TVinputJobSkills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/judson_bold"
+                android:labelFor="@+id/ETJobTitle"
+                android:text="Skills"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ETJobDesc" />
+
+            <EditText
+                android:id="@+id/ETJobSkills"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/brown_border"
+                android:hint="Enter job skills required"
+                android:padding="16dp"
+                android:textColorHint="#88FFFFFF"
+                android:textColor="@color/white"
+                android:inputType="textMultiLine"
+                android:gravity="top|start"
+                android:lines="4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TVinputJobSkills" />
+
+            <TextView
+                android:id="@+id/TVchooseJobTypes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/judson_bold"
+                android:labelFor="@+id/ETJobTitle"
+                android:text="Job Types"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ETJobSkills" />
+
+            <GridLayout
+                android:id="@+id/GLJobTypes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="8dp"
+                android:columnCount="2"
+                android:rowCount="3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TVchooseJobTypes">
+
+                <CheckBox
+                    android:id="@+id/CBFullTime"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Full-Time"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/CBPartTime"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Part-Time"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/CBContract"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Contract"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/CBTemporary"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Temporary"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/CBInternship"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Internship"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/TVchooseRemote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/judson_bold"
+                android:labelFor="@+id/GLJobTypes"
+                android:text="Remote"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/GLJobTypes" />
+
+            <GridLayout
+                android:id="@+id/GLRemote"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="8dp"
+                android:columnCount="2"
+                android:rowCount="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TVchooseRemote">
+
+                <CheckBox
+                    android:id="@+id/CBOnSite"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="On-site"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/CBRemote"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Remote"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/CBHybrid"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Hybrid"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/TVchooseExperienceLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/judson_bold"
+                android:labelFor="@+id/GLExperienceLevel"
+                android:text="Experience Level"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/GLRemote" />
+
+            <GridLayout
+                android:id="@+id/GLExperienceLevel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="8dp"
+                android:columnCount="2"
+                android:rowCount="4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TVchooseExperienceLevel">
+
+                <CheckBox
+                    android:id="@+id/CBInternshipExp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:fontFamily="@font/judson"
+                    android:paddingHorizontal="10dp"
+                    android:text="Internship"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:theme="@style/colored_checkbox" />
+
+                <CheckBox
+                    android:id="@+id/CBEntryLevel"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Entry-Level"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/CBMidLevel"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Mid-Level"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/CBSeniorLevel"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Senior-Level"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/CBManagerial"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Managerial"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/CBExecutive"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Executive"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/CBFreelance"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Freelance"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/TVchooseJobCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/judson_bold"
+                android:labelFor="@+id/ETJobTitle"
+                android:text="Job Category"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/GLExperienceLevel" />
+
+            <GridLayout
+                android:id="@+id/GLJobCategory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="8dp"
+                android:columnCount="2"
+                android:rowCount="7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TVchooseJobCategory">
+
+                <CheckBox
+                    android:id="@+id/CBTech"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Technology"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/CBEngineering"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Engineering"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/CBHealth"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Healthcare"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/CBBusiness"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Business"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/CBEdu"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Education"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/CBCreative"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Creative"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/CBRetail"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Retail"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/CBFood"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Food"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/CBTransport"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Transportation"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/CBAdmin"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Administrative"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/CBLaw"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Law"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/CBScience"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Science"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/CBOthers"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:button="@drawable/custom_checkbox"
+                    android:theme="@style/colored_checkbox"
+                    android:paddingHorizontal="10dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Others"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/TVaddMedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/judson_bold"
+                android:labelFor="@+id/GLJobTypes"
+                android:text="Add Media"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/GLJobCategory" />
+
+            <ImageButton
+                android:id="@+id/IBaddMedia"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/TVaddMedia"
+                android:src="@drawable/baseline_upload_file_24"
+                android:background="@drawable/dashed_border" />
+
+            <ImageView
+                android:id="@+id/IVPreview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="25dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toBottomOf="@id/IBaddMedia"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@id/IVPreview"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="@color/white"
+                android:fontFamily="@font/judson_bold"
+                android:textSize="20sp"
+                android:backgroundTint="@color/brown"
+                android:text="Submit" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

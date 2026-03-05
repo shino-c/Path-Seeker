@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".ProfileSeekerViewRateFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="414dp"
+                android:layout_height="227dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profilePhotoRate1"
+                android:layout_width="157dp"
+                android:layout_height="156dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imageView4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/roundedImageView"
+                app:srcCompat="@drawable/img_1" />
+
+            <TextView
+                android:id="@+id/nameRate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/judson_bold"
+                android:text="Judy Hopps"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profilePhotoRate1" />
+
+            <TextView
+                android:id="@+id/statusRate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="78dp"
+                android:layout_marginEnd="79dp"
+                android:fontFamily="@font/judson_bold"
+                android:text="Freelancer, Universiti Malaya"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameRate1" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/statusRate1">
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="220dp"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="MY EXPERIENCES"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.043"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/RVSkillRate" />
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="363dp"
+                    android:layout_height="112dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/rectangle_round_white" />
+
+                <TextView
+                    android:id="@+id/rating1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableEnd="@drawable/star_filled"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="4.9"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="40sp"
+                    app:layout_constraintEnd_toStartOf="@+id/divider15"
+                    app:layout_constraintStart_toStartOf="@+id/imageView14"
+                    app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+                <View
+                    android:id="@+id/divider15"
+                    android:layout_width="2dp"
+                    android:layout_height="90dp"
+                    android:background="#000000"
+                    android:color="#000000"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView14"
+                    app:layout_constraintStart_toStartOf="@+id/imageView14"
+                    app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="rating"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/divider15"
+                    app:layout_constraintStart_toStartOf="@+id/imageView14"
+                    app:layout_constraintTop_toBottomOf="@+id/rating1" />
+
+                <TextView
+                    android:id="@+id/expRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/judson_bold"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="40sp"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView14"
+                    app:layout_constraintStart_toEndOf="@+id/divider15"
+                    app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="experience"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView14"
+                    app:layout_constraintStart_toEndOf="@+id/divider15"
+                    app:layout_constraintTop_toBottomOf="@+id/expRate" />
+
+                <TextView
+                    android:id="@+id/textView49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="220dp"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="ABOUT ME"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+                <Button
+                    android:id="@+id/btnPdfRate"
+                    android:layout_width="155dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="34dp"
+                    android:layout_marginEnd="24dp"
+                    android:backgroundTint="#F0801C"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="Click for CV"
+                    android:textSize="20sp"
+                    app:cornerRadius="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="0dp"
+                    android:layout_height="169dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="24dp"
+                    android:src="@drawable/rectangle_round_grey"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+                <EditText
+                    android:id="@+id/bioRate1"
+                    android:layout_width="317dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:fontFamily="@font/judson_bold"
+                    android:gravity="center"
+                    android:inputType="textMultiLine"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView6"
+                    app:layout_constraintStart_toStartOf="@+id/imageView15"
+                    app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+                <TextView
+                    android:id="@+id/textView51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="SKILLS"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+                <View
+                    android:id="@+id/divider25"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+                <View
+                    android:id="@+id/divider24"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RVSkillRate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider25" />
+
+                <ScrollView
+                    android:id="@+id/scrollView5"
+                    android:layout_width="408dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider24">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/RVExpShowRate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </ScrollView>
+
+                <Button
+                    android:id="@+id/btnRateSeeker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="126dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="126dp"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="#F0801C"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="Rate Me!"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    app:cornerRadius="20dp"
+                    app:icon="@drawable/star"
+                    app:iconTint="#000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/scrollView5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

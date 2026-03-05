@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/sectorErrorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="512dp"
+        android:elevation="20dp"
+        android:fontFamily="@font/judson"
+        android:text="Error message here"
+        android:textColor="#FF0000"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="373dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="-85dp"
+            android:contentDescription="Back icon"
+            android:src="@drawable/back"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/judson"
+            android:text="Sign Up"
+            android:textColor="#FFFFFF"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_top_corners"
+            android:orientation="vertical"
+            android:layout_marginTop="0dp"
+            android:padding="30dp">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="23dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/judson"
+                android:text=" Company email"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="9dp" />
+
+            <EditText
+                android:id="@+id/emailInput"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:autoText="false"
+                android:drawableEnd="@drawable/done_icon"
+                android:fontFamily="@font/judson"
+                android:hint="Please fill in a valid company email"
+                android:inputType="textEmailAddress"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="24dp" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/judson"
+                android:text=" Company Name"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="9dp" />
+
+            <EditText
+                android:id="@+id/companyName"
+                android:layout_width="349dp"
+                android:layout_height="48dp"
+                android:autoText="false"
+                android:fontFamily="@font/judson"
+                android:hint="Please fill in your company name"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="24dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/judson"
+                android:text=" Sector"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="9dp" />
+
+            <Spinner
+                android:id="@+id/sectorSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:padding="8dp"
+                android:background="@drawable/rounded_spinner_background"
+                android:popupBackground="@color/white"
+                android:textAlignment="viewStart"
+                android:fontFamily="@font/judson"
+                android:textSize="10sp"
+                android:spinnerMode="dropdown" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/judson"
+                android:text=" Password"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="9dp" />
+
+            <EditText
+                android:id="@+id/passwordInput"
+                android:layout_width="330dp"
+                android:layout_height="48dp"
+                android:drawableEnd="@drawable/eyeclose"
+                android:fontFamily="@font/judson"
+                android:hint="Your password"
+                android:inputType="textPassword"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/judson"
+                android:text=" Confirm Password"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="9dp" />
+
+            <EditText
+                android:id="@+id/confirmPasswordInput"
+                android:layout_width="332dp"
+                android:layout_height="48dp"
+                android:drawableEnd="@drawable/eyeclose"
+                android:fontFamily="@font/judson"
+                android:hint="Your confirm password"
+                android:inputType="textPassword"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="22dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signUpBtnR"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/judson"
+                android:text="Sign Up"
+                android:textSize="23sp"
+                app:cornerRadius="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/judson"
+                    android:text="Already have an account?"
+                    android:textColor="#6B5858"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/signinre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/judson"
+                    android:text="Sign in"
+                    android:textColor="#6B5858"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

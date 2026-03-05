@@ -1,0 +1,221 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/searchbg">
+
+    <!-- LinearLayout containing header -->
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="110dp"
+            android:fontFamily="@font/judson"
+            android:text="Discover"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/findAJobCard"
+            android:layout_width="394dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="#F8F8F8"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear">
+
+            <!-- Horizontal layout for icon and text -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/findJobIcon"
+                    android:layout_width="73dp"
+                    android:layout_height="73dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/findjobicon" />
+
+                <TextView
+                    android:id="@+id/jobText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/judson"
+                    android:text="Find a Job"
+                    android:textColor="#321F1F"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/jobArrow"
+                    android:layout_width="9dp"
+                    android:layout_height="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="165dp"
+                    android:src="@drawable/arrow" />
+            </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/partnerCard"
+        android:layout_width="394dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="#DDDDDD"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/findAJobCard">
+
+        <!-- Horizontal layout for icon and text -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/programMainIcon"
+                android:layout_width="73dp"
+                android:layout_height="73dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/programicon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/judson"
+                android:text="Partnership Programs"
+                android:textColor="#321F1F"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/programArrow"
+                android:layout_width="9dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="65dp"
+                android:src="@drawable/arrow" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/skillCard"
+        android:layout_width="394dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="#BEB7AF"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/partnerCard">
+
+        <!-- Horizontal layout for icon and text -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/skillIcon"
+                android:layout_width="73dp"
+                android:layout_height="73dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/skillicon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/judson"
+                android:text="Skill Development Courses"
+                android:textColor="#321F1F"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/skillArrow"
+                android:layout_width="9dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="25dp"
+                android:src="@drawable/arrow" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/eventCard"
+        android:layout_width="394dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="#a99a86"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skillCard">
+
+        <!-- Horizontal layout for icon and text -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/eventIcon"
+                android:layout_width="73dp"
+                android:layout_height="73dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/eventicon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/judson"
+                android:text="Events Nearby"
+                android:textColor="#321F1F"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/skillArrow"
+                android:layout_width="9dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/arrow" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

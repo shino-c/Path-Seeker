@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_roundedbg"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/verificationTitle"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/judson"
+        android:gravity="center"
+        android:text="Verification code"
+        android:textColor="@android:color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/verificationMessage"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Title indicating the user should enter the verification code"
+        android:fontFamily="@font/judson"
+        android:gravity="center"
+        android:text="The verification code is being sent. Please enter the verification code below once you receive it to reset your password."
+        android:textColor="@android:color/darker_gray"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="353dp"
+        android:layout_height="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/judson"
+        android:text="Verification code"
+        android:textAlignment="viewStart"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/verificationCode"
+        android:layout_width="338dp"
+        android:layout_height="48dp"
+        android:autoText="false"
+        android:fontFamily="@font/judson"
+        android:hint="Please enter the verification code sent to your mail"
+        android:textSize="14sp" />
+
+    <!-- Horizontal Layout for Submit and Cancel Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancelVerificationBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#AAAAAA"
+            android:fontFamily="@font/judson"
+            android:text="Cancel"
+            android:textSize="16sp"
+            app:cornerRadius="8sp" />
+
+        <View
+            android:layout_width="16dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/submitVerificationBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#111E0A"
+            android:fontFamily="@font/judson"
+            android:text="Submit"
+            android:textSize="16sp"
+            app:cornerRadius="8sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

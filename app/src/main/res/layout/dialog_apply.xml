@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="340dp"
+    android:layout_height="280dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="24dp"
+    app:cardBackgroundColor="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/TVApply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/judson_bold"
+            android:text="Apply This Job"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RVJobType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TVApply"
+            app:layout_constraintVertical_bias="0" />
+
+
+        <!--            <CheckBox-->
+        <!--                android:id="@+id/CBFullTime"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_margin="10dp"-->
+        <!--                android:button="@drawable/custom_checkbox"-->
+        <!--                android:fontFamily="@font/judson"-->
+        <!--                android:paddingHorizontal="10dp"-->
+        <!--                android:text="Full-Time"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textSize="20sp"-->
+        <!--                android:theme="@style/colored_checkbox" />-->
+
+        <!--            <CheckBox-->
+        <!--                android:id="@+id/CBPartTime"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_margin="10dp"-->
+        <!--                android:button="@drawable/custom_checkbox"-->
+        <!--                android:fontFamily="@font/judson"-->
+        <!--                android:paddingHorizontal="10dp"-->
+        <!--                android:text="Part-Time"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textSize="20sp"-->
+        <!--                android:theme="@style/colored_checkbox" />-->
+
+        <!--            <CheckBox-->
+        <!--                android:id="@+id/CBContract"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_margin="10dp"-->
+        <!--                android:button="@drawable/custom_checkbox"-->
+        <!--                android:fontFamily="@font/judson"-->
+        <!--                android:paddingHorizontal="10dp"-->
+        <!--                android:text="Contract"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textSize="20sp"-->
+        <!--                android:theme="@style/colored_checkbox" />-->
+
+        <!--            <CheckBox-->
+        <!--                android:id="@+id/CBTemporary"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_margin="10dp"-->
+        <!--                android:button="@drawable/custom_checkbox"-->
+        <!--                android:fontFamily="@font/judson"-->
+        <!--                android:paddingHorizontal="10dp"-->
+        <!--                android:text="Temporary"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textSize="20sp"-->
+        <!--                android:theme="@style/colored_checkbox" />-->
+
+        <!--            <CheckBox-->
+        <!--                android:id="@+id/CBInternship"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_margin="10dp"-->
+        <!--                android:button="@drawable/custom_checkbox"-->
+        <!--                android:fontFamily="@font/judson"-->
+        <!--                android:paddingHorizontal="10dp"-->
+        <!--                android:text="Internship"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textSize="20sp"-->
+        <!--                android:theme="@style/colored_checkbox" />-->
+
+
+        <ImageButton
+            android:id="@+id/IBClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.82"
+            app:layout_constraintStart_toEndOf="@id/TVApply"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/orange"
+            android:fontFamily="@font/judson_bold"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/RVJobType" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

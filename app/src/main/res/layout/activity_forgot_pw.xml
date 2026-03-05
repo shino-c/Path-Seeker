@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgforgotpw"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="373dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="-85dp"
+            android:contentDescription="Back icon"
+            android:src="@drawable/back"
+            app:srcCompat="@drawable/back" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_top_corners"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/judson"
+                android:text="Enter Your Mail To\nreset your password"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/judson"
+                android:text="Email address"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="17dp" />
+
+            <EditText
+                android:id="@+id/emailInput"
+                android:layout_width="349dp"
+                android:layout_height="54dp"
+                android:autoText="false"
+                android:drawableEnd="@null"
+                android:fontFamily="@font/judson"
+                android:hint="Your email"
+                android:inputType="textEmailAddress"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="22dp" />
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/resetPWBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/judson"
+                android:text="Reset password"
+                android:textSize="23sp"
+                app:cornerRadius="30dp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancelBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/judson"
+                android:text="Cancel"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                app:cornerRadius="30dp"
+                app:strokeColor="#DCDCDC"
+                app:strokeWidth="1sp"
+                android:elevation="8dp"
+                android:translationZ="4dp"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="118dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/logoicon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

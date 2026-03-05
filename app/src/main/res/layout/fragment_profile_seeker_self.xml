@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".ProfileSelfSeekerFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="414dp"
+                android:layout_height="227dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img" />
+
+            <ImageButton
+                android:id="@+id/btnSetting2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/baseline_settings_24" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profilePhotoSelf"
+                android:layout_width="157dp"
+                android:layout_height="156dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imageView4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/roundedImageView"
+                app:srcCompat="@drawable/img_1" />
+
+            <TextView
+                android:id="@+id/nameSelfSeeker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/judson_bold"
+                android:text="Judy Hopps"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profilePhotoSelf" />
+
+            <TextView
+                android:id="@+id/statusSelfSeeker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="78dp"
+                android:layout_marginEnd="79dp"
+                android:fontFamily="@font/judson_bold"
+                android:text="Freelancer, Universiti Malaya"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameSelfSeeker" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/statusSelfSeeker">
+
+                <Button
+                    android:id="@+id/btnEditProfile3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="160dp"
+                    android:layout_marginBottom="40dp"
+                    android:backgroundTint="#F0801C"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="Edit Profile"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    app:cornerRadius="20dp"
+                    app:icon="@drawable/icon"
+                    app:iconTint="#000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/scrollView5" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="220dp"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="MY EXPERIENCES"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.043"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/RVSkill" />
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="363dp"
+                    android:layout_height="112dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/rectangle_round_white" />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:drawableEnd="@drawable/star_filled"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="40sp"
+                    app:layout_constraintEnd_toStartOf="@+id/divider15"
+                    app:layout_constraintStart_toStartOf="@+id/imageView14"
+                    app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+                <View
+                    android:id="@+id/divider15"
+                    android:layout_width="2dp"
+                    android:layout_height="90dp"
+                    android:background="#000000"
+                    android:color="#000000"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView14"
+                    app:layout_constraintStart_toStartOf="@+id/imageView14"
+                    app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="rating"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/divider15"
+                    app:layout_constraintStart_toStartOf="@+id/imageView14"
+                    app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+                <TextView
+                    android:id="@+id/numExpSelf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="40sp"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView14"
+                    app:layout_constraintStart_toEndOf="@+id/divider15"
+                    app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="experience"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView14"
+                    app:layout_constraintStart_toEndOf="@+id/divider15"
+                    app:layout_constraintTop_toBottomOf="@+id/numExpSelf" />
+
+                <TextView
+                    android:id="@+id/textView49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="220dp"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="ABOUT ME"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+                <Button
+                    android:id="@+id/btnRetrievePDF2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="34dp"
+                    android:layout_marginEnd="24dp"
+                    android:backgroundTint="#F0801C"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="Click for CV"
+                    android:textSize="20sp"
+                    app:cornerRadius="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="0dp"
+                    android:layout_height="169dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="24dp"
+                    android:src="@drawable/rectangle_round_grey"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+                <EditText
+                    android:id="@+id/bioSelfSeeker"
+                    android:layout_width="317dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:fontFamily="@font/judson_bold"
+                    android:gravity="center"
+                    android:inputType="textMultiLine"
+                    android:text="Hi, I'm Judy Hopps, an energetic rabbit with a passion for justice and problem-solving. As Zootopia's first rabbit police officer, I bring a unique perspective, strong work ethic, and commitment to making a positive impact. I thrive in fast-paced environments, tackling challenges with creativity and perseverance. "
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+                    app:layout_constraintStart_toStartOf="@+id/imageView15"
+                    app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+                <TextView
+                    android:id="@+id/textView51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/judson_bold"
+                    android:text="SKILLS"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+                <View
+                    android:id="@+id/divider25"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+                <View
+                    android:id="@+id/divider24"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="#FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RVSkill"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider25" />
+
+                <ScrollView
+                    android:id="@+id/scrollView5"
+                    android:layout_width="408dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider24">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/RVExpShow"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </ScrollView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

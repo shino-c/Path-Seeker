@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "524490591479",
+    "firebase_url": "https://pathseeker-40c02-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "pathseeker-40c02",
+    "storage_bucket": "pathseeker-40c02.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524490591479:android:189c88e20d48dfaca597f2",
+        "android_client_info": {
+          "package_name": "com.example.MAD"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "524490591479-ug1kca6paioe7rrf9h6h5tr3jfi27ksp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.MAD",
+            "certificate_hash": "bafe2f11356677baa41475652a74f56175911fed"
+          }
+        },
+        {
+          "client_id": "524490591479-5e21f34dhahm0gsd548at435jovv1ptm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4EUGQMFQihRqtY-6LoguQzShabQJq7Vo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "524490591479-5e21f34dhahm0gsd548at435jovv1ptm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524490591479:android:854a88260ad76f31a597f2",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "524490591479-5e21f34dhahm0gsd548at435jovv1ptm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4EUGQMFQihRqtY-6LoguQzShabQJq7Vo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "524490591479-5e21f34dhahm0gsd548at435jovv1ptm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524490591479:android:12e2dd766d778b47a597f2",
+        "android_client_info": {
+          "package_name": "com.example.pathseekerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "524490591479-5e21f34dhahm0gsd548at435jovv1ptm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4EUGQMFQihRqtY-6LoguQzShabQJq7Vo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "524490591479-5e21f34dhahm0gsd548at435jovv1ptm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

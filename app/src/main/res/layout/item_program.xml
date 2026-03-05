@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/program_image"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/program_title"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/program_image"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="140dp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="20dp"
+        android:maxLines="2"
+        android:gravity="center_vertical"
+        android:ellipsize="end"
+        android:lineSpacingExtra="2dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/join_button"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/program_image"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#F0801C"
+        android:text="JOIN NOW"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
